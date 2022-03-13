@@ -1,42 +1,61 @@
 class Solution {
     public int shortestPathLength(int[][] graph) {
-        if (graph.length == 1) {
-            return 0;
-        }
-        
         int n = graph.length;
-        int endingMask = (1 << n) - 1;
-        boolean[][] seen = new boolean[n][endingMask];
-        ArrayList<int[]> queue = new ArrayList<>();
-        
-        for (int i = 0; i < n; i++) {
-            queue.add(new int[] {i, 1 << i});
-            seen[i][1 << i] = true;
+        if(n==1)
+            return 0;
+        int end = (1<<n)-1;
+        boolean[][] seen = new boolean[n][end];
+        MyList q = new MyList();
+        for(int i = 0; i < n; i++){
+            q.add((i<<n)|(1<<i));
+            seen[i][1<<i] = true;
         }
-        
-        int steps = 0;
-        while (!queue.isEmpty()) {
-            ArrayList<int[]> nextQueue = new ArrayList<>();
-            for (int i = 0; i < queue.size(); i++) {
-                int[] currentPair = queue.get(i);
-                int node = currentPair[0];
-                int mask = currentPair[1];
-                for (int neighbor : graph[node]) {
-                    int nextMask = mask | (1 << neighbor);
-                    if (nextMask == endingMask) {
-                        return 1 + steps;
-                    }
-                    
-                    if (!seen[neighbor][nextMask]) {
-                        seen[neighbor][nextMask] = true;
-                        nextQueue.add(new int[] {neighbor, nextMask});
+        int count = 1;
+        for(;;){
+            for(int size = q.size(); size>0; size--){
+                int curr = q.poll();
+                for(int nei : graph[curr>>n]){
+                    int next = (curr&end)|(1<<nei);
+                    if(next == end)
+                        return count;
+                    if(!seen[nei][next]){
+                        seen[nei][next] = true;
+                        q.add((nei<<n)|next);
                     }
                 }
             }
-            steps++;
-            queue = nextQueue;
+            count++;
         }
-        
-        return -1;
+    }
+}
+class MyList{
+    MyNode head;
+    MyNode tail;
+    int _size = 0;
+    void add(int val){
+        _size++;
+        if(head == null){
+            head = new MyNode(val);
+            tail = head;
+        }else{
+            tail.next = new MyNode(val);
+            tail = tail.next;
+        }
+    }
+    int poll(){
+        int temp = head.val;
+        head = head.next;
+        _size--;
+        return temp;
+    }
+    int size(){
+        return this._size;
+    }
+    class MyNode{
+        MyNode next;
+        int val;
+        MyNode(int val){
+            this.val = val;
+        }
     }
 }
