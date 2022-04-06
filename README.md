@@ -51,6 +51,10 @@ https://leetcode.com/problems/longest-common-subsequence
 
 https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers
 
+https://leetcode.com/problems/search-in-rotated-sorted-array/
+
+https://leetcode.com/problems/single-element-in-a-sorted-array/
+
 # Hard
 
 https://leetcode.com/problems/median-of-two-sorted-arrays
