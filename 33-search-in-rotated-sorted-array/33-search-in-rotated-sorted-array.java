@@ -18,11 +18,11 @@ class Solution {
                 b = mid-1;
           else if(nums[mid]<target && nums[b]<target && nums[mid]<nums[b])
               b = mid-1;
-          else if(nums[mid]<target && nums[b]<=target && nums[mid]>nums[b])
+          else if(nums[mid]<target && nums[b]<target && nums[mid]>nums[b])
               a = mid+1;
           else if(nums[mid]>target && nums[b]<target && nums[mid]>nums[b])
               b = mid-1;
-            else if(nums[mid]<target && nums[b]>=target && nums[mid]<nums[b])
+            else if(nums[mid]<target && nums[b]>target && nums[mid]<nums[b])
                 a= mid+1;
           
         }
