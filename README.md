@@ -55,6 +55,8 @@ https://leetcode.com/problems/search-in-rotated-sorted-array
 
 https://leetcode.com/problems/single-element-in-a-sorted-array
 
+https://practice.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array1317
+
 # Hard
 
 https://leetcode.com/problems/median-of-two-sorted-arrays
