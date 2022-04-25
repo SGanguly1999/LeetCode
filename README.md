@@ -57,6 +57,10 @@ https://leetcode.com/problems/single-element-in-a-sorted-array
 
 https://practice.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array1317
 
+https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array
+
+https://leetcode.com/problems/implement-trie-prefix-tree
+
 # Hard
 
 https://leetcode.com/problems/median-of-two-sorted-arrays
