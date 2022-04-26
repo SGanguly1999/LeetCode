@@ -61,6 +61,8 @@ https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array
 
 https://leetcode.com/problems/implement-trie-prefix-tree
 
+https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array
+
 # Hard
 
 https://leetcode.com/problems/median-of-two-sorted-arrays
