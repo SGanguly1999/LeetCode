@@ -78,3 +78,5 @@ https://leetcode.com/problems/department-top-three-salaries
 https://leetcode.com/problems/the-skyline-problem
 
 https://leetcode.com/problems/shortest-path-visiting-all-nodes
+
+https://leetcode.com/problems/maximum-xor-with-an-element-from-array
