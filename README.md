@@ -25,6 +25,8 @@ https://leetcode.com/problems/single-number
 
 https://leetcode.com/problems/valid-parentheses
 
+https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters
+
 # Medium
 
 https://leetcode.com/problems/minimum-domino-rotations-for-equal-row
