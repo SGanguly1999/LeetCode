@@ -67,6 +67,8 @@ https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array
 
 https://leetcode.com/problems/unique-binary-search-trees-ii
 
+https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions
+
 # Hard
 
 https://leetcode.com/problems/median-of-two-sorted-arrays
