@@ -65,11 +65,11 @@ class Solution {
                  graph[n1].dist = Math.min(graph[n1].dist,node.dist + wei);
                  if(prev > graph[n1].dist)
                      queue.add(graph[n1]);
-                 System.out.println(k+"---dist-->"+n1+" "+graph[n1].dist);
+                 //System.out.println(k+"---dist-->"+n1+" "+graph[n1].dist);
                  graph[n1].colour = 1;
             }
-            view(queue);
-            System.out.println("End of "+node.no);
+            //view(queue);
+           // System.out.println("End of "+node.no);
             node.colour = 2;
         }
         if(count == n)
