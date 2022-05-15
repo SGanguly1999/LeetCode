@@ -71,6 +71,8 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/sub
 
 https://leetcode.com/problems/max-number-of-k-sum-pairs
 
+https://leetcode.com/problems/network-delay-time/
+
 # Hard
 
 https://leetcode.com/problems/median-of-two-sorted-arrays
