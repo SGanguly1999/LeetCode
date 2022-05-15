@@ -17,7 +17,6 @@ class Solution {
     public int deepestLeavesSum(TreeNode root) {
       Queue<TreeNode> queue = new LinkedList<TreeNode>();
       int depth = 0;
-      TreeNode start = root;
       TreeNode end = root;
       TreeNode end1 = null;
       int prev_sum = 0; 
