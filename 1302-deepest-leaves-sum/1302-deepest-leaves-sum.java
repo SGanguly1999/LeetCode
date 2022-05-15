@@ -16,13 +16,11 @@
 class Solution {
     public int deepestLeavesSum(TreeNode root) {
       Queue<TreeNode> queue = new LinkedList<TreeNode>();
-      int depth = 0;
       TreeNode end = root;
       TreeNode end1 = null;
       int prev_sum = 0; 
       int sum = 0;
       queue.add(root); 
-      depth++;
       while(!queue.isEmpty()) {
           TreeNode ele = queue.poll();
           sum+=ele.val;
@@ -39,7 +37,6 @@ class Solution {
           if(ele == end) {
               prev_sum = sum;
               sum = 0;
-              depth++;
               end = end1;
           }
       }
