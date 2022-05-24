@@ -75,6 +75,8 @@ https://leetcode.com/problems/network-delay-time/
 
 https://leetcode.com/problems/deepest-leaves-sum
 
+https://leetcode.com/problems/3sum/
+
 # Hard
 
 https://leetcode.com/problems/median-of-two-sorted-arrays
@@ -86,6 +88,8 @@ https://leetcode.com/problems/merge-k-sorted-lists
 https://leetcode.com/problems/reverse-nodes-in-k-group
 
 https://leetcode.com/problems/wildcard-matching
+
+https://leetcode.com/problems/longest-valid-parentheses/
 
 https://leetcode.com/problems/department-top-three-salaries
 
