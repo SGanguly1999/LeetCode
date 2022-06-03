@@ -2,7 +2,7 @@ class Trie {
     int count[] = new int[2];
     Trie next[] = new Trie[2];
     int max=Integer.MIN_VALUE;
-    int min = 2;
+    int min = Integer.MAX_VALUE;
     public int insertp(int bits,int num) {
         int mask = 1 << bits;
         long num2 = (long)num << 1;
@@ -10,7 +10,7 @@ class Trie {
         Trie nextNode2 = this;
         int total = 0;
         boolean flag = true;
-        if(num2 > this.max)
+        if(num2 > this.max || num2 < this.min)
             flag = false;
         this.max = Math.max(this.max,num);
         for(int i = 0;i<bits+1;i++) {
@@ -31,6 +31,9 @@ class Trie {
             nextNode = nextNode.next[digit];
         }
         //System.out.println("Done");
+        if(num2 < this.min)
+            total=this.count[0]+this.count[1]-1;
+        this.min = Math.min(this.min,num);
         return total;
     }
     public int insertneg(int bits,int num) {
@@ -78,7 +81,7 @@ class Solution {
             max = Math.max(max,nums[i]);
             min = Math.min(min,nums[i]);
         }
-        int bitpos = (int)(Math.log(max)/Math.log(2));
+        int bitpos = Math.max((int)(Math.log(max)/Math.log(2)),0);
         int bitneg = (int)(Math.log(-min)/Math.log(2));
         for(int i= 0;i<nums.length;i++){
             if(nums[i] >=0)
