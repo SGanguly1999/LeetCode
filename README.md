@@ -101,4 +101,4 @@ https://leetcode.com/problems/maximum-xor-with-an-element-from-array
 
 https://leetcode.com/problems/minimum-window-substring
 
-https://leetcode.com/problems/reverse-pairs/
+https://leetcode.com/problems/reverse-pairs
