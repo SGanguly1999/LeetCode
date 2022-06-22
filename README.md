@@ -71,11 +71,13 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/sub
 
 https://leetcode.com/problems/max-number-of-k-sum-pairs
 
-https://leetcode.com/problems/network-delay-time/
+https://leetcode.com/problems/network-delay-time
 
 https://leetcode.com/problems/deepest-leaves-sum
 
-https://leetcode.com/problems/3sum/
+https://leetcode.com/problems/3sum
+
+https://leetcode.com/problems/kth-largest-element-in-an-array
 
 # Hard
 
