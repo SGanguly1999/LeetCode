@@ -81,6 +81,8 @@ https://leetcode.com/problems/kth-largest-element-in-an-array
 
 https://leetcode.com/problems/132-pattern
 
+https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards
+
 # Hard
 
 https://leetcode.com/problems/median-of-two-sorted-arrays
