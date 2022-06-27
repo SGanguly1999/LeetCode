@@ -83,6 +83,8 @@ https://leetcode.com/problems/132-pattern
 
 https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards
 
+https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers
+
 # Hard
 
 https://leetcode.com/problems/median-of-two-sorted-arrays
