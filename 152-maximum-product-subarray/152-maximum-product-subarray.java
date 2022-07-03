@@ -5,7 +5,7 @@ class Solution {
         a[0]=nums[0];
         int max = a[0];
         min[0]=nums[0];
-        System.out.println(a[0]+" "+min[0]);
+       // System.out.println(a[0]+" "+min[0]);
         for(int i = 1; i < nums.length; i++) {
            if(a[i-1]*nums[i] >= a[i-1] && a[i-1]*nums[i]>nums[i] && a[i-1]!=0)
                a[i] = a[i-1] * nums[i];
@@ -27,7 +27,7 @@ class Solution {
                 min[i] = a[i-1] * nums[i];
             
             max = Math.max(max,a[i]);
-            System.out.println(a[i]+" "+min[i]);
+           // System.out.println(a[i]+" "+min[i]);
         }
         return max;
     }
