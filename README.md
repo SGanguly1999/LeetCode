@@ -27,6 +27,8 @@ https://leetcode.com/problems/valid-parentheses
 
 https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters
 
+https://leetcode.com/problems/fibonacci-number
+
 # Medium
 
 https://leetcode.com/problems/minimum-domino-rotations-for-equal-row
