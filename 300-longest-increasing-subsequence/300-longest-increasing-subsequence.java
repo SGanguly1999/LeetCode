@@ -18,8 +18,6 @@ class Solution {
                 arr[i]=max+1;
             res = Math.max(arr[i],res);
         }
-       /* for(int i = 0;i<nums.length;i++)
-            System.out.print(arr[i]+" ");*/
         return res;
     }
 }
