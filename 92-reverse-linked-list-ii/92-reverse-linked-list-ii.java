@@ -44,10 +44,6 @@ class Solution {
             pos++;
         }
         currentNode = head;
-        /*while(currentNode!=null) {
-            System.out.println(currentNode.val);
-            currentNode = currentNode.next;
-        }*/
         return head;
     }
 }
