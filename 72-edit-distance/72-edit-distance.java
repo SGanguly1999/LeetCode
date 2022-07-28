@@ -9,7 +9,11 @@
 
 We will use dynamic programing approach
 
-For storing the previous result we will use a 3 dimensional matrix...Each page of the matrix represents the operations mentioned. Page 1 denotes the operation 1,Page 2 denotes operation 2 and so on...
+For storing the previous result we will use a 2 dimensional matrix...The minimum operation to convert from a particular index of word1 to end to word2 starting from a partuicular index of word2 to end is stored in corresponding cell
+
+For example: horse
+             ros
+store[0][0] stores the minimum operation to convert starting from 0th index of word1 to  word starting from 0 th index of word2.            
 
 */
 
