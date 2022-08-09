@@ -6,7 +6,7 @@ class Solution {
             map.put(arr[i],i);
         long ar[] = new long[arr.length];
         ar[0] = 1;
-        long mod =1000000007;
+        long mod =(long)1e9 + 7;
         for(int i = 1; i < arr.length;i++) {
             ar[i]=1;
             for(int j = 0; j < i; j++) {
