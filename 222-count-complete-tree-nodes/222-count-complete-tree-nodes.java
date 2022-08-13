@@ -44,7 +44,7 @@ class Solution {
         cu_level++;
         if(level-1 == cu_level) {
             count++;
-            System.out.println(count+" "+root.val+" "+level);
+            //System.out.println(count+" "+root.val+" "+level);
         if(root.right!=null) {
             count = 2 * (count-1);
             flag = true;
