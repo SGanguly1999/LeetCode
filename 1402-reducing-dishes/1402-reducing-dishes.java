@@ -3,13 +3,12 @@ class Solution {
         Arrays.sort(satisfaction);
         int len = satisfaction.length;
         int result=0;
-        for(int i = len; i >0;i--) {
-            int r = 0;
-            int k =i;
-            for(int j = satisfaction.length-1; j >=len-i;j--)
-                    r+=satisfaction[j]*k--; 
-            result = Math.max(result,r);
+        int sum = 0;
+        for (int i = satisfaction.length - 1; i >= 0; i--) {
+            if (sum + satisfaction[i] < 0) break;
             
+            sum += satisfaction[i];
+            result += sum;
         }
         return result;
 }
