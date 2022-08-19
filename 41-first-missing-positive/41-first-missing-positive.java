@@ -1,19 +1,25 @@
 class Solution {
     public int firstMissingPositive(int[] nums) {
-        if(nums.length == 500000) return nums.length+1;
-        if(nums.length == 199999) return 150000;
-        
-        boolean exists = false;
-        
-        for (int i = 1; i <= nums.length + 1; i++) {
-            exists = false;
-            for (int j = 0; j < nums.length && !exists; j++) {
-                if (nums[j] == i) exists = true;
+        for(int i = 0;i<nums.length;i++) {
+            if(nums[i]>nums.length || nums[i] <= 0)
+                continue;
+            int index = i;
+            int num = nums[index];
+            while(num != index+1) {
+               int new_ind = num - 1;
+                int store = nums[new_ind];
+                nums[new_ind] = num;
+                num = store;
+                index = new_ind;
+                if(num > nums.length || num <= 0)
+                    break;
             }
-            
-            if (!exists) return i;
         }
+        for(int i = 0; i < nums.length;i++) {
+            if(nums[i] != i+1)
+                return i+1;
+        }
+        return nums.length+1;
         
-        return -1;
-    }
+}
 }
