@@ -27,10 +27,8 @@ class Trie {
             if(nextNode.next[digit] == null)
                 nextNode.next[digit] = new Trie();
             nextNode.count[digit]++;
-           //System.out.println(num+" "+nextNode.count[digit]+" "+digit);
             nextNode = nextNode.next[digit];
         }
-        //System.out.println("Done");
         return total;
     }
     public int insertneg(int bits,int num) {
@@ -50,7 +48,6 @@ class Trie {
             int digit2 = ((num2 & (mask>>i)) == 0)?0:1;
             if(digit2 == 1){
                 total+=nextNode2.count[0];
-                System.out.println(total);
             }
             nextNode2 = nextNode2.next[digit2];
             if(nextNode2 == null)
@@ -59,7 +56,6 @@ class Trie {
             if(nextNode.next[digit] == null)
                 nextNode.next[digit] = new Trie();
             nextNode.count[digit]++;
-            //System.out.println(num+" "+nextNode.count[digit]+" "+digit);
             nextNode = nextNode.next[digit];
         }
         if(-num2 < min)
