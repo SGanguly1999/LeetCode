@@ -29,14 +29,17 @@ class Solution {
         Node endOfLevel = root;
         Node item = null;
         ArrayList<Integer> newlist = new ArrayList<Integer>();
+        newlist.add(root.val);
+        list.add(newlist);
+        newlist = new ArrayList<Integer>();
         while(!queue.isEmpty()) {
             currentNode = queue.poll();
-            newlist.add(currentNode.val);
             for(Node item1:currentNode.children) {
                 item = item1;
+                newlist.add(item.val);
                 queue.add(item);
             }
-            if(currentNode == endOfLevel) {
+            if(currentNode == endOfLevel && !newlist.isEmpty()) {
                 list.add(newlist);
                 newlist = new ArrayList<Integer>();
                 endOfLevel = item;
